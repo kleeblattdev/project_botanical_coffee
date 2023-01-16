@@ -1,17 +1,162 @@
-/* Error: Undefined variable.
- *    ,
- * 23 |     background-color: $colorWhite;
- *    |                       ^^^^^^^^^^^
- *    '
- *   assets/scss/main.scss 23:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 23 \2502      background-color: $colorWhite;\a    \2502                        ^^^^^^^^^^^\a    \2575 \a   assets/scss/main.scss 23:23  root stylesheet";
+/* color-scheme
+#6CA89C, #283331,  #FAFAFA, #F9D2CB;
+ */
+/* font-family
+font-family: 'Playfair Display', serif; */
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
+/* GLOBAL STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 430px;
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, main {
+  margin: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #283331;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-variation-settings: "wght" 400;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-variation-settings: "wght" 700;
+}
+
+h4 {
+  font-size: 0.6rem;
+  font-variation-settings: "wght" 400;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-variation-settings: "wght" 700;
+  color: #6CA89C;
+}
+
+.productNamePrice {
+  padding: 10px;
+}
+
+/* HEADER STYLE */
+header {
+  margin-bottom: 40px;
+}
+header .headlineMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+header .headlineMenu #buttonBack {
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+/* NAVBAR STYLE */
+#navbarButton {
+  background-image: url(../img/Burger_menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+nav {
+  height: 100vh;
+  background-color: #6CA89C;
+  display: none; /* Javascript!!! */
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 30px;
+  text-align: center;
+}
+nav ul li a {
+  font-size: 3rem;
+  font-variation-settings: "wght" 400;
+  color: #FAFAFA;
+}
+
+/* MAIN STYLE */
+/* main product */
+.mainProduct {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mainProduct .firstProduct {
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 15px #000;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+.mainProduct .secondProduct {
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 15px #000;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+.mainProduct .firstProduct .priceButton, .mainProduct .secondProduct .priceButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainProduct .firstProduct #shoppingCart, .mainProduct .secondProduct #shoppingCart {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/ShoppingCart.png);
+  border: none;
+  margin-right: 20px;
+}
+
+.sectionSeperator {
+  margin: 24px 0;
+}
+
+/* other product */
+.otherProduct {
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+}
+.otherProduct .firstOtherProduct, .otherProduct .secondOtherProduct, .otherProduct .thirdOtherProduct {
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 15px #000;
+  border-radius: 10px;
+}
+.otherProduct .firstOtherProduct h3, .otherProduct .secondOtherProduct h3, .otherProduct .thirdOtherProduct h3 {
+  font-size: 0.6rem;
+}
+.otherProduct .firstOtherProduct p, .otherProduct .secondOtherProduct p, .otherProduct .thirdOtherProduct p {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

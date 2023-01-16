@@ -5,9 +5,9 @@
 /* font-family
 font-family: 'Playfair Display', serif; */
 
-@import url(./variables.scss);
-@import url(./mixins.scss);
-@import url(./font-face.scss);
+@import './variables.scss';
+@import './mixins.scss';
+@import './font-face.scss';
 
 /* GLOBAL STYLE */
 
@@ -20,7 +20,6 @@ font-family: 'Playfair Display', serif; */
 body{
     max-width: 430px;
     font-family: 'Playfair Display', serif;
-    background-color: $colorWhite;
 }
 
 a{
