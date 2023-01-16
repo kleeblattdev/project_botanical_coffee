@@ -18,7 +18,7 @@ body {
   max-width: 430px;
   max-height: 932px;
   font-family: "Playfair Display", serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
