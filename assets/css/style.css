@@ -16,7 +16,9 @@ font-family: 'Playfair Display', serif; */
 
 body {
   max-width: 430px;
+  max-height: 932px;
   font-family: "Playfair Display", serif;
+  overflow: hidden;
 }
 
 a {
@@ -24,7 +26,7 @@ a {
 }
 
 header, main {
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
 h1, h2, h3, h4 {
@@ -84,6 +86,7 @@ header .headlineMenu #buttonBack {
   width: 50px;
   height: 50px;
   display: inline-block;
+  margin-right: 20px;
 }
 
 nav {
@@ -122,6 +125,7 @@ nav ul li a {
   box-shadow: 0px 3px 15px #000;
   border-radius: 15px;
   padding-bottom: 10px;
+  overflow: hidden;
 }
 .mainProduct .firstProduct .priceButton, .mainProduct .secondProduct .priceButton {
   display: flex;
@@ -150,6 +154,7 @@ nav ul li a {
   border: 1px solid transparent;
   box-shadow: 0px 3px 15px #000;
   border-radius: 10px;
+  overflow: hidden;
 }
 .otherProduct .firstOtherProduct h3, .otherProduct .secondOtherProduct h3, .otherProduct .thirdOtherProduct h3 {
   font-size: 0.6rem;
